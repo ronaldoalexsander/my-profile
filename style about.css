@@ -1,0 +1,212 @@
+body {
+    box-sizing: border-box;
+    margin-top: 60px
+}
+  
+.navbar-style {
+    border-bottom: 1px solid #5D0E41;
+}
+  
+.a-logo {
+    font-family: "Anta", sans-serif;
+    margin: 5px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.a-container {
+    font-size: 20px;
+    color: #35374B;
+    cursor: pointer;
+}
+
+.a-container:hover {
+  color: #525CEB;
+}
+  
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+  
+    .a-logo {
+      font-size: 20px;
+    }
+  
+    .a-container {
+        font-size: 12px;
+        justify-content: center;
+        margin: 0%;
+        padding: 5px;
+    }
+  }
+  
+  .content {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+  }
+  
+  .deskripsi {
+    display: flex;
+    text-align: center;
+  }
+  
+  .deskripsi img {
+    margin-right: 10%;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  
+  .deskripsi-2 {
+    width: 50%;
+  }
+  
+  .h1-style {
+    font-size: 20px;
+    border-bottom: 2px solid black;   
+  }
+  
+  
+  .profile-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    margin-bottom: 10%;
+    align-items: center;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .profile-card {
+    position: relative;
+    width: 400px;
+    height: 230px;
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .profile-container.show .profile-card {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .profile-card h2 {
+    margin-top: 0;
+  }
+  
+  .profile-card p {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .info {
+    padding-right: 172px;
+  }
+  
+  .info-1 {
+    padding-right: 45px;
+  }
+
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .show-button {
+    background-color: #35374B;
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  
+  @media (max-width: 768px) {
+
+    .content {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-bottom: 0%;
+    }
+
+    .deskripsi {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .deskripsi img {
+      margin-bottom: 10px;
+      width: 50%;
+      height: auto;
+      transform: rotate(0deg);
+    }
+  
+    .deskripsi-2 {
+      width: 100%;
+    }
+
+    .profile-container {
+        height: 40vh;
+        margin-bottom: 0%;
+    }
+  }
+  
+  .social-media {
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-media ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    margin-right: 80px;
+    margin-top: 5px;
+  }
+  
+  .social-media li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-media li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .social-media li a i {
+    font-size: 24px;
+  }
+  
+@media screen and (max-width: 768px) {
+
+    .social-media li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    
+} 

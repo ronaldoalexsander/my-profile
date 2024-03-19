@@ -1,0 +1,143 @@
+body {
+    box-sizing: border-box;
+}
+
+.navbar-style {
+    border-bottom: 1px solid #5D0E41;
+}
+
+.a-logo {
+    font-family: "Anta", sans-serif;
+    margin: 5px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.a-container {
+  font-size: 20px;
+  color: #31363F;
+  cursor: pointer;
+}
+
+.a-container:hover {
+  color: #525CEB;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+
+    .a-logo {
+      font-size: 20px;
+    }
+
+    .a-container {
+        font-size: 12px;
+        justify-content: center;
+        margin: 0%;
+        padding: 5px;
+    }
+  }
+
+.content {
+    display: flex;
+    text-align: center;
+    margin-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.content img {
+   width: 400px;
+   height: 450px;
+   border-bottom: 2px solid black;
+}
+
+.deskripsi {
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+.deskripsi h1 {
+    color: #31363F;
+    margin-top: 13%;
+    padding-left: 20%;
+}
+
+.deskripsi p {
+   margin-top: 10%;
+   padding-left: 20%;
+}
+
+.music {
+  margin-top: 10%;
+  width: 500px;
+  margin-left: 31%;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .content img {
+      width: 100%;
+      height: auto;
+      margin-top: 40%;
+    }
+  
+    .deskripsi h1,
+    .deskripsi p {
+      margin-top: 5%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    .music {
+      margin-top: 15%;
+      margin-left: 13%;
+      width: auto;
+    }
+
+
+  }
+
+
+  .social-media {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-media ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    margin-right: 80px;
+    margin-top: 5px;
+  }
+  
+  .social-media li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-media li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .social-media li a i {
+    font-size: 24px;
+  }
+  
+@media screen and (max-width: 768px) {
+    .social-media li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    
+}
